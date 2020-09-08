@@ -1,0 +1,47 @@
+{
+  "name": "template",
+  "version": "1.0.0",
+  "description": "- 1 command: `npm i`\r - second command: `gulp`",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/renalex1/template.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/renalex1/issues"
+  },
+  "homepage": "https://github.com/renalex1/#readme",
+  "dependencies": {
+    "browser-sync": "^2.26.12",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-csso": "^2.0.0",
+    "gulp-favicons": "^2.4.0",
+    "gulp-file-include": "^2.2.2",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-html-bem-validator": "^1.0.5",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-inject-string": "^1.1.2",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-shorthand": "^1.1.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^2.0.0",
+    "gulp-watch": "^5.0.1",
+    "gulp.spritesmith": "^6.11.0",
+    "stylelint": "^13.7.0"
+  },
+  "devDependencies": {
+    "gulp-svg-sprite": "^1.5.0"
+  }
+}

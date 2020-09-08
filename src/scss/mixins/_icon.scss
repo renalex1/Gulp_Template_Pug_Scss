@@ -1,0 +1,6 @@
+@mixin icon($width-icon: 100%, $height-icon: 100%) {
+	width: $width-icon;
+	height: $height-icon;
+	background: url("../../img/sprite/png");
+	display: inline-block;
+}

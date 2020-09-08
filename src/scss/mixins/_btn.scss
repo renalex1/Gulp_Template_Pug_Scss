@@ -1,0 +1,10 @@
+@mixin btn($background-color: #fff, $border-radius: 0, $color: #000, $font-size: 16px, $padding: 0, $line-height: 2) {
+	background-color: $background-color;
+	border-radius: $border-radius;
+	font-size: $font-size;
+	color: $color;
+	text-decoration: none;
+	padding: $padding;
+	display: inline-block;
+	line-height: $font-size + $line-height;
+}
