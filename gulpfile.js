@@ -181,7 +181,7 @@ function js(callback) {
 
 /* image build
 ====================================================*/
-function images(callback) {
+function images() {
     return src(path.src.img)
         .pipe(
             imagemin([
@@ -203,7 +203,6 @@ function images(callback) {
                 }))
         .pipe(dest(path.build.img))
         .pipe(browsersync.stream());
-    callback();
 }
 /* sprite
 ====================================================*/
@@ -265,8 +264,8 @@ const clean = () => del(path.clean.project);
 
 /* default
 ====================================================*/
-const build = gulp.series(clean, gulp.parallel(html, js, css));
-const watching = gulp.series(build, gulp.parallel(watchFiles, browserSync));
+const build = gulp.series(clean, gulp.parallel(html, js, css, images));
+const watching = gulp.series(build, gulp.parallel(watchFiles, svgSprite, browserSync));
 const validate = gulp.series(validateBem);
 
 /* watch
