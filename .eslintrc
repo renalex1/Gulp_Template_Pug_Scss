@@ -76,7 +76,7 @@
 	"parser": "babel-eslint",
 	"parserOptions": {
 		"allowImportExportEverywhere": true,
-		"ecmaVersion": 6,
+		"ecmaVersion": 2018,
 		"sourceType": "module"
 	},
 	"rules": {
@@ -310,7 +310,7 @@
 		"id-length": "off",
 		"id-match": "off",
 		"indent": [
-			"error",
+			"error", 4,
 			"tab",
 			{
 				"SwitchCase": 1
