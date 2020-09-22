@@ -1,12 +1,12 @@
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+box-sizing: inherit;
 }
 
 html {
-  box-sizing: border-box;
-  scroll-behavior: smooth;
+box-sizing: border-box;
+scroll-behavior: smooth;
 }
 
 body {
@@ -20,4 +20,8 @@ body {
 button:not([disabled]),
 a[role="button"]:not([disabled]) {
   cursor: pointer;
+}
+
+.icon {
+  display: inline-block;
 }

@@ -28,7 +28,7 @@ const path = {
         favicon: source_folder + '/img/**/favicon.png',
     },
     clean: {
-        project: [project_folder],
+        project: project_folder,
     },
 };
 

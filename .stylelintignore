@@ -1,0 +1,3 @@
+build/**/*.css
+src/scss/vendor/**/*
+src/scss/**/*.*

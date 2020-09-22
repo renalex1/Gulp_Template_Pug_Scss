@@ -1,0 +1,9 @@
+mixin list(descriptionList)
+    li(class="list__item" )
+        i(class="list__icon icon-" + descriptionList.icon)
+        span.list__text= descriptionList.text
+//-
+    - var descriptionListB = [{icon: 'calendar', text: '3 Ամիս'}, {icon: 'personalProject', text: 'Անձնական աշխատանք'}, {icon: 'gift', text: 'Նվերներ'}]
+
+    for descriptionList in descriptionListB
+        +list(descriptionList)

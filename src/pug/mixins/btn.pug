@@ -1,0 +1,14 @@
+//- Button mixin
+mixin btn(href, style, size)
+    - var style = (typeof style === 'undefined') ? "default" : style
+    - var href = (typeof href === 'undefined') ? "#" : href
+    case stlyle
+        when "large"
+            - size = "btn-lg"
+        when "small"
+            - size = "btn-sm"
+        when "mini"
+            - size = "btn-xs"
+
+    a( class=["btn" + style, size], href=href )
+        block
