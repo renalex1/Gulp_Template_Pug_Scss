@@ -135,9 +135,7 @@ function css(callback) {
         .pipe(dest(path.build.css))
         .pipe(csso())
         .pipe(
-            rename({
-                extname: ".min.css"
-            })
+            rename({extname: ".min.css"})
         )
         .pipe(dest(path.build.css))
         .pipe(browsersync.stream())
