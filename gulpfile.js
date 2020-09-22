@@ -92,6 +92,10 @@ function html(callback) {
 ====================================================*/
 function validateBem(callback) {
     return src(path.watch.html)
+        .pipe(plumber({
+            errorHandler: notify.onError(function (err) {
+            })
+        }))
         .pipe(bemValidator())
         .pipe(dest(path.build.html))
     callback();
@@ -263,8 +267,8 @@ const clean = () => del(path.clean.project);
 /* default
 ====================================================*/
 const build = gulp.series(clean, gulp.parallel(html, js, css, images));
-const watching = gulp.series(build, gulp.parallel(watchFiles, svgSprite, browserSync));
-const validate = gulp.series(validateBem);
+const watching = gulp.series(build, gulp.parallel(watchFiles, svgSprite, browserSync), validate);
+const validate = gulp.series(validateBem, lintScss, );
 
 /* watch
 ====================================================*/

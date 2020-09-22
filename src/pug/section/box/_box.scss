@@ -1,0 +1,37 @@
+.box {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 35px 33px 32px 33px;
+		background: $color-white;
+		box-shadow: 10px 15px 60px rgba(133, 134, 135, 0.25);
+		border-radius: 20px;
+		margin-bottom: 37px;
+	// &__icon {
+	// 	display: flex;
+	// 	width: 90px;
+	// 	height: 90px;
+	// 	border: 2px solid #0EC1CC;
+	// 	border-radius: 50%;
+	// 	box-sizing: border-box;
+	// 	padding: 13px 14px 13px 14px;
+	// }
+	// &__title {
+	// 	font-family: $font-family-mardoto;
+	// 	font-weight: 500;
+	// 	font-size: 24px;
+	// 	line-height: 36px;
+	// 	text-align: center;
+	// 	color: $color-blueZodiac;
+	// 	margin: 15px 0 20px 0;
+	// }
+	// &__text {
+	// 	font-family: $font-family-mardoto;
+	// 	font-weight: normal;
+	// 	font-size: 16px;
+	// 	line-height: 24px;
+	// 	text-align: center;
+	// 	color: $color-doveGray;
+	// }
+}

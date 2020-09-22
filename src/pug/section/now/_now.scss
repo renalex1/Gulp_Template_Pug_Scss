@@ -1,0 +1,31 @@
+.now {
+  position: relative;
+  background: $color-white;
+  box-shadow: 10px 15px 60px rgba(131, 131, 133, 0.25);
+  border-radius: 10px;
+  padding: 18px 40px;
+  box-sizing: border-box;
+  min-height: 108px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+
+  &__description {
+    font-size: 16px;
+    line-height: 24px;
+    color: $color-blueZodiac;
+    margin: 0;
+  }
+
+  &__count {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: $color-purpleheart;
+    border-radius: 10px 0;
+    padding: 10px 14px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: $color-white;
+  }
+}

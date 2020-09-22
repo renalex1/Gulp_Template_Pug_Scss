@@ -1,0 +1,38 @@
+.footer {
+  background-color: $color-selago;
+  padding-bottom: 50px;
+  padding-top: 70px;
+
+  &__title {
+    margin: 0;
+    font-size: 42px;
+    line-height: 63px;
+    color: $color-blueZodiac;
+    text-align: center;
+    font-family: $font-family-mardoto;
+    font-weight: bold;
+  }
+
+  &__contact {
+    padding: 39px 60px;
+    border: 1px solid $color-lynch;
+    box-sizing: border-box;
+    filter: drop-shadow(10px 15px 60px rgba(131, 131, 133, 0.25));
+  	@media (max-width: 1359px) {
+		padding: 27px 60px;
+	}
+  	@media (max-width: 991px) {
+		padding: 27px 20px;
+	}
+  }
+
+	&__map {
+		@media (max-width: 767px) {
+			margin-top: 30px;
+		}
+	}
+  &__row {
+    margin-top: 40px;
+    margin-bottom: 100px;
+  }
+}

@@ -1,0 +1,16 @@
+.container-fluid.header-bg
+	.container
+		.row
+			.col-xl-7.col-lg-8.col-md-12.col-12
+				.header
+				+svg('icon-book').header__book
+					ul.list.header__list
+						for descriptionList in headerList
+							+list(descriptionList)
+					h1.header__title Front End developer: code your life
+					p.header__location Մենք գտնվում ենք Երևանի կենտրոնում։ Դուք կարող եք հեշտությամբ գտնել և հասնել մեզ Երևանի ցանկացած կետից։
+					include ../list/list.pug
+					include ../btnGroup/btnGroup.pug
+					ul.list.header__listDuration
+					for descriptionList in headrListDuration
+							+list(descriptionList)

@@ -1,0 +1,28 @@
+.list {
+	// max-width: 540px;
+	width:100%;
+	font-family: $font-family-montserrat;
+	font-weight: normal;
+	color: $color-doveGray;
+	font-size: 18px;
+	line-height: 24px;
+	padding: 0 0 0 0;
+	@media (max-width: 575px) {
+			font-size: 14px;
+		}
+	&__item {
+		display: inline-flex;
+		flex-direction: row;
+		align-items: center;
+		margin: 0 0 0 37px;
+		@media (max-width: 767px) {
+			margin: 0 auto;
+		}
+		&:first-child {
+			margin: 0 0 0 0;
+		}
+		& :last-child {
+			margin: 0 0 0 10px;
+		}
+	}
+}

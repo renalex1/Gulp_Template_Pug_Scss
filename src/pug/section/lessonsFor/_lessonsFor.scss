@@ -1,0 +1,28 @@
+.lessonsFor-bg {
+	width: 100%;
+	height: 401px;
+	background-color: $color-curiousBlue;
+}
+.lessonsFor {
+	&__titles {
+		font-weight: 500;
+		font-size: 36px;
+		line-height: 43px;
+		text-align: center;
+		color: $color-white;
+		margin: 100px 0 60px 0;
+	}
+	&__item {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	&__boxIcon {
+
+	}
+	&__boxBg {
+		width: 70px;
+		height: 70px;
+		border-radius: 50%;
+	}
+}

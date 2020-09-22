@@ -1,0 +1,22 @@
+ul.contact__list.contact-list
+    li.contact-list__item
+        +svg('icon-address').contact-list__icon
+        span.contact-list__text ул. Прошян
+    li.contact-list__item
+        +svg('icon-clock').contact-list__icon
+        span.contact-list__text Время работы 10:00 - 19:00
+    li.contact-list__item
+        +svg('icon-phone').contact-list__icon
+        span.contact-list__text
+            a.contact-list__link.contact-list__link--dark(href="tel:+37455751777") +(374) 55 751 777
+            | &nbsp;(
+            a.contact-list__link(href="#") заказать звонок
+            | )
+    li.contact-list__item
+        +svg('icon-mail').contact-list__icon
+        span.contact-list__text
+            a.contact-list__link.contact-list__link--dark(href="mailto:info@codetime.am" target="_blank") info@codetime.am
+    li.contact-list__item
+        +svg('icon-telegram').contact-list__icon
+        span.contact-list__text
+            a.contact-list__link.contact-list__link--dark(href="https://t.me/codetimebot" target="_blank") @codetimebot

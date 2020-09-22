@@ -1,0 +1,17 @@
+.studyFront-bg {
+	background-color: $color-selago;
+}
+.studyFront {
+	&__title {
+		font-family: $font-family-mardoto;
+		font-weight: 500;
+		font-size: 36px;
+		line-height: 43px;
+		text-align: center;
+		color: $color-casal;
+		margin-top: 100px;
+	}
+	&__row {
+		margin-top: 123px;
+	}
+}

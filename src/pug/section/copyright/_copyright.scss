@@ -1,0 +1,20 @@
+.copyright {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	list-style: none;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+	&__item {
+		font-family: $font-family-mardoto;
+		color: $color-lynch;
+		font-size: 18px;
+		line-height: 27px;
+		margin: 0 10px;
+	}
+	&__link {
+		color: $color-lynch;
+		text-decoration: none;
+	}
+}

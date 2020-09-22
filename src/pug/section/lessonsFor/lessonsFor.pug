@@ -1,0 +1,30 @@
+.container-fluid.lessonsFor-bg
+	.container
+		.row
+			.col-xl-12.lessonsFor
+				h2.lessonsFor__titles Մեր դասընթացները հարմար են․․․
+		.row
+			.col-xl-12.lessonsFor
+				.lessonsFor__item
+					.box.lessonsFor__box
+						+svg('icon-prepayment').box__icon.lessonsFor__icon
+						span.box__title.lessonsFor__title Կրկնություն
+						p.box__text.lessonsFor__text Պարապմունքը սկսվում է տնային աշխատանքի և նախկինում անցած նյութերի ստուգմամբ
+					.box.lessonsFor__box
+						+svg('icon-calendar').box__icon.lessonsFor__icon
+						span.box__title.lessonsFor__title Տեսական նյութ
+						p.box__text.lessonsFor__text Հարստացնում ենք բառապաշարը, սովորում ենք քերականություն, դիտարկու
+					.box.lessonsFor__box
+						+svg('icon-chart').box__icon.lessonsFor__icon
+						span.box__title.lessonsFor__title Պրակտիկա
+						p.box__text.lessonsFor__text Տարբեր օրինակների օգնությամբ զարգացնում ենք
+		.row
+			.col-xl-12
+				span('icon-contract')
+				.lessonsFor__boxIcon
+					.lessonsFor__boxBg
+					span.icon-contract
+					span.lessonsFor__icontext Դուք կարող եք ծանոթանալ մեր ակադեմիայի հետ
+				ul.list.header__list
+					for descriptionList in lessonsForList
+							+list(descriptionList)
