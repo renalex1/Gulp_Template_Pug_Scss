@@ -76,7 +76,7 @@
 	"parser": "babel-eslint",
 	"parserOptions": {
 		"allowImportExportEverywhere": true,
-		"ecmaVersion": 2018,
+		"ecmaVersion": 6,
 		"sourceType": "module"
 	},
 	"rules": {
