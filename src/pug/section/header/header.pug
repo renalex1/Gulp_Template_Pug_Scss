@@ -3,7 +3,6 @@
 		.row
 			.col-xl-7.col-lg-8.col-md-12.col-12
 				.header
-				+svg('icon-book').header__book
 					ul.list.header__list
 						for descriptionList in headerList
 							+list(descriptionList)
@@ -12,5 +11,5 @@
 					include ../list/list.pug
 					include ../btnGroup/btnGroup.pug
 					ul.list.header__listDuration
-					for descriptionList in headrListDuration
+						for descriptionList in headrListDuration
 							+list(descriptionList)
