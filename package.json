@@ -1,7 +1,7 @@
 {
   "name": "template",
   "version": "1.0.0",
-  "description": "Front End Template",
+  "description": "- 1 command: `npm i`\r - second command: `gulp`",
   "main": "index.js",
   "scripts": {
     "status": "git status",
@@ -10,30 +10,35 @@
     "push": "git push -u origin master",
     "fetch": "git fetch",
     "branch": "git branch -a",
-    "checkoutMaster": "git checkout master"
+    "checkoutMaster": "git checkout master",
+    "lint:styles": "stylelint \"src/**/*.scss\" --syntax=scss",
+    "lint:styles --fix": "stylelint \"src/**/*.scss\" --syntax=scss --fix",
+    "lint:scripts": "eslint --color ./src/js",
+    "lint:scripts --fix": "eslint --fix --color ./src/js",
+    "lint:pug": "pug-lint --config .pug-lintrc.json"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/renalex1/template.git"
+    "url": "git+https://github.com/CodeTimeAm/Front-End-Template"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/renalex1/issues"
+    "url": "https://github.com/CodeTimeAm/Front-End-Template.git/issues"
   },
-  "homepage": "https://github.com/renalex1/#readme",
+  "homepage": "https://github.com/CodeTimeAm/Front-End-Template.git/#readme",
   "dependencies": {
-    "babel-eslint": "10.1.0",
-    "bootstrap": "^5.0.0-alpha1",
+    "babel-eslint": "^10.1.0",
     "browser-sync": "^2.26.12",
     "del": "^5.1.0",
+    "eslint": "^7.9.0",
     "fancy-log": "^1.3.3",
-    "gulp": "4.0.2",
+    "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-csso": "^2.0.0",
-    "gulp-debug": "4.0.0",
-    "gulp-eslint": "6.0.0",
+    "gulp-debug": "^4.0.0",
+    "gulp-eslint": "^6.0.0",
     "gulp-fonter": "^0.3.0",
     "gulp-group-css-media-queries": "^1.2.2",
     "gulp-html-bem-validator": "^1.0.5",
@@ -41,8 +46,8 @@
     "gulp-imagemin": "^7.1.0",
     "gulp-notify": "^3.2.0",
     "gulp-plumber": "^1.2.1",
-    "gulp-pug": "4.0.1",
-    "gulp-pug-linter": "1.3.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-pug-linter": "^1.4.0",
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^4.1.0",
     "gulp-shorthand": "^1.1.0",
@@ -50,15 +55,17 @@
     "gulp-ttf2woff": "^1.1.1",
     "gulp-ttf2woff2": "^3.0.0",
     "gulp-uglify": "^2.0.0",
-    "gulp-w3c-html-validator": "2.0.1",
+    "gulp-w3c-html-validator": "^2.0.1",
     "gulp-watch": "^5.0.1",
     "gulp.spritesmith": "^6.11.0",
-    "husky": "4.2.5",
-    "lint-staged": "10.2.11",
-    "stylelint": "13.6.1",
-    "stylelint-declaration-block-no-ignored-properties": "2.3.0",
-    "stylelint-order": "4.1.0",
-    "stylelint-scss": "3.18.0"
+    "htmlhint": "^0.14.1",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.4.0",
+    "stylelint": "^13.7.2",
+    "stylelint-declaration-block-no-ignored-properties": "^2.3.0",
+    "stylelint-order": "^4.1.0",
+    "stylelint-scss": "^3.18.0",
+    "stylelint-selector-bem-pattern": "^2.1.0"
   },
   "devDependencies": {
     "favicons": "^6.2.0",
@@ -73,7 +80,7 @@
   },
   "lint-staged": {
     "*.js": "eslint --color --fix",
-    "a.{css,scss}": "stylelint --color",
-    "a.pug": "pug-lint"
+    "*.scss": "stylelint --fix --color --config ./.stylelintrc",
+    "*.pug": "pug-lint"
   }
 }

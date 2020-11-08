@@ -1,27 +1,91 @@
-*,
-*::before,
-*::after {
-box-sizing: inherit;
+// stylelint-disable plugin/selector-bem-pattern
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+	font-size: 14px;
+	line-height: 1;
+	text-size-adjust: 100%;
 }
 
 html {
-box-sizing: border-box;
-scroll-behavior: smooth;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
 }
 
 body {
-  -webkit-font-smoothing: antialiased;
-  text-decoration-skip: objects;
-  text-rendering: optimizeLegibility;
-  text-size-adjust: 100%;
-  -webkit-tap-highlight-color: transparent;
+	-webkit-font-smoothing: antialiased;
+	text-decoration-skip: objects;
+	text-rendering: optimizeLegibility;
+	text-size-adjust: 100%;
+	-webkit-tap-highlight-color: transparent;
 }
 
-button:not([disabled]),
-a[role="button"]:not([disabled]) {
-  cursor: pointer;
+button:not([disabled]), a[role="button"]:not([disabled]) {
+	cursor: pointer;
+}
+
+:focus, :active {
+	outline: none;
+}
+
+a:focus, a:active {
+	outline: none;
+}
+
+nav, footer, header, aside {
+	display: block;
+}
+
+input, button, textarea {
+	font-family: inherit;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button {
+	cursor: pointer;
+}
+
+button::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+
+a, a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+a:focus {
+	text-decoration: none;
+}
+
+ul, li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+	font-weight: inherit;
+	font-size: inherit;
 }
 
 .icon {
-  display: inline-block;
+	display: inline-block;
 }

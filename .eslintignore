@@ -1,2 +1,4 @@
 build/**/*.js
 src/js/vendor/**/*
+src/scss/vendor/**/*
+gulpfile.js

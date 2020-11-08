@@ -1,2 +1,4 @@
 build/**/*.css
 src/scss/vendor/**/*
+src/scss/mixins/_sprites.scss
+/**/*.md
